@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="application-name" content=" " />
-    <meta name="author" content="" />
-    <meta name="description" content=" " />
-    <meta name="keywords" content=" " />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="application-name" content=" ">
+    <meta name="author" content="">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
     <title>Document</title>
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" as="style" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" /> -->
     <!--link rel="stylesheet" href="./css/reset.css" /-->
-    <link rel="stylesheet" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" as="style">
     <!--link rel="stylesheet" href="./css/style.min.css" as="style" /-->
     <!--link rel="stylesheet" href="./css/flexboxgrid2.min.css" /-->
     <!--link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /-->
@@ -23,7 +23,28 @@
 
   <body>
     <!--HEADER START-->
-    @@include("chunk/header.html")
+    <header class="header">
+  <div class="header__container container">
+    <div class="header__logo">
+      <a class="header__logo-link" href="#"><img src="../img/svg/logo.svg" alt="logo"></a>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="#" class="header__nav-link js-scroll">Business areas</a></li>
+        <li class="header__nav-item"><a href="#featured" class="header__nav-link js-scroll">Featured images</a></li>
+        <li class="header__nav-item"><a href="#gear-cage" class="header__nav-link js-scroll">Gear cage</a></li>
+        <li class="header__nav-item"><a href="#contact" class="header__nav-link js-scroll">Contact</a></li>
+        <li class="header__nav-item"><a href="#!" class="header__nav-link js-scroll">Get template</a></li>
+      </ul>
+    </nav>
+    <div class="header__burger burger">
+      <span class="burger__line burger__line-top"></span>
+      <span class="burger__line burger__line-middle"></span>
+      <span class="burger__line burger__line-bottom"></span>
+    </div>
+  </div>
+</header>
+
     <!--HEADER END-->
 
     <!--MAIN SECTION START-->
@@ -44,7 +65,11 @@
     <!--MAIN SECTION END-->
 
     <!--FOOTER SECTION START-->
-    @@include("chunk/footer.html")
+    <footer class="footer">
+
+  <p class="footer__copyright">© Copyright&nbsp;<span>Mindblister </span>&nbsp;2019</p>
+</footer>
+
     <!--FOOTER SECTION END-->
 
     <!--подключение скриптов-->

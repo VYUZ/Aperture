@@ -1,0 +1,154 @@
+// @use "sass:math";
+
+@import "block/start";
+@import "block/vars";
+@import "block/font";
+
+/* общие стили */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  // letter-spacing: 0em;
+  color: #ffffff;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 $gap * 0.5;
+  margin: 0 auto;
+  // @include m1300 {
+  //   max-width: 1200px;
+  // }
+}
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: $gap;
+//   margin-left: -$gap * 0.5;
+//   margin-right: -$gap * 0.5;
+// }
+// .col {
+//   margin: 0 $gap * 0.5;
+// }
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 54px;
+line-height: 59px;
+  // @include m1300 {
+  //   font-size: 8vw;
+  // }
+  // @include m800 {
+  //   font-size: 6vw;
+  // }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 23px;
+line-height: 30px;
+color:$mygray;
+}
+
+.extra-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+}
+.extra-item {
+  margin-left: 16px;
+  font-size: 12px;
+  line-height: 12;
+}
+
+.extra-item::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.extra-item-1 {
+  &::before {
+    background: url("/img/svg/extra-img-1.svg") center center / cover no-repeat;
+    width: 16px;
+    height: 16px;
+  }
+}
+.extra-item-2 {
+  &::before {
+    background: url("/img/svg/extra-img-2.svg") center center / cover no-repeat;
+    width: 16px;
+    height: 16px;
+  }
+}
+.extra-item-3 {
+  &::before {
+    background: url("/img/svg/extra-img-3.svg") center center / cover no-repeat;
+    width: 32px;
+    height: 16px;
+  }
+}
+.extra-item-4 {
+  &::before {
+    background: url("/img/svg/extra-img-4.svg") center center / cover no-repeat;
+    width: 10px;
+    height: 16px;
+  }
+}
+
+// @import "../node_modules/t-scroll/sass/t-scroll.min.scss";
+
+/* HEADER START */
+
+@import "block/header";
+
+/* HEADER END */
+
+/* MAIN START */
+
+@import "block/main";
+
+/* MAIN END */
+
+/* FOOTER START */
+
+@import "block/footer";
+
+/* FOOTER END */
+
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+/* @media */
+
+// /* Laptops */
+// @media only screen and (max-width: 1200px) {
+// }
+// /* Tablets, Medium Devices, Desktops */
+// @media only screen and (max-width: 992px) {
+// }
+// /* Small Devices, Tablets */
+// @media only screen and (max-width: 768px) {
+// }
+// /* Phones */
+// @media only screen and (max-width: 575px) {
+// }
+// /* Extra Small Devices, old Phones */
+// @media only screen and (max-width: 480px) {
+// }
