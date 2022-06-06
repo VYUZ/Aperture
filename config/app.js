@@ -8,6 +8,8 @@ module.exports = {
   htmlmin: {
     collapseWhitespace: isProd,
     removeComments: isProd,
+    //если нужно удалять комментарии и на проде и в разработке
+    // removeComments: true,
   },
 
   imagemin: {
