@@ -9,9 +9,11 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+  @include adaptiv-value("font-size", 14, 10, 1);
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  @include adaptiv-value("line-height", 20, 16, 1);
   // letter-spacing: 0em;
   color: #ffffff;
 }
@@ -40,8 +42,8 @@ h3 {
   text-align: center;
 }
 h1 {
-  font-size: 54px;
-line-height: 59px;
+  @include adaptiv-value("font-size", 54, 40, 0);
+  line-height: 59px;
   // @include m1300 {
   //   font-size: 8vw;
   // }
@@ -51,25 +53,38 @@ line-height: 59px;
 }
 
 h2 {
-  font-size: 40px;
+  @include adaptiv-value("font-size", 40, 30, 0);
   line-height: 42px;
 }
 
 h3 {
-  font-size: 23px;
-line-height: 30px;
-color:$mygray;
+  @include adaptiv-value("font-size", 23, 16, 0);
+  line-height: 30px;
+  color: $mygray;
+  font-weight: normal;
+}
+
+h4 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  @include adaptiv-value("font-size", 14, 10, 1);
 }
 
 .extra-list {
   display: flex;
   flex-wrap: wrap;
-  align-self: flex-end;
+  align-self: flex-start;
+  justify-content: flex-end;
+  @include adaptiv-value("margin-left", 1050, 20, 0);
+  margin-right: $gap;
 }
 .extra-item {
   margin-left: 16px;
   font-size: 12px;
-  line-height: 12;
 }
 
 .extra-item::before {
@@ -106,6 +121,12 @@ color:$mygray;
     width: 10px;
     height: 16px;
   }
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 
 // @import "../node_modules/t-scroll/sass/t-scroll.min.scss";
