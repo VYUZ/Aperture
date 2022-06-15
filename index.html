@@ -1,1 +1,318 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="application-name" content=" "><meta name="author" content=""><meta name="description" content=" "><meta name="keywords" content=" "><title>Aperture</title><link rel="stylesheet" href="./css/style.min.css" as="style"></head><body><header class="header"><div class="header__container container"><div class="header__logo"><a class="header__logo-link" href="#"><img src="img/svg/logo.svg" alt="logo"></a></div><nav class="header__nav"><ul class="header__nav-list"><li class="header__nav-item"><a href="#" class="header__nav-link js-scroll">Business areas</a></li><li class="header__nav-item"><a href="#featured" class="header__nav-link js-scroll">Featured images</a></li><li class="header__nav-item"><a href="#gear-cage" class="header__nav-link js-scroll">Gear cage</a></li><li class="header__nav-item"><a href="#contact" class="header__nav-link js-scroll">Contact</a></li><li class="header__nav-item"><a href="#!" class="header__nav-link js-scroll">Get template</a></li></ul></nav><div class="header__burger burger"><span class="burger__line burger__line-top"></span> <span class="burger__line burger__line-middle"></span> <span class="burger__line burger__line-bottom"></span></div></div></header><main><section class="hero"><div class="hero__container container"><h3 class="hero__subtitle">Photographer & Filmmaker</h3><h1 class="hero__title">Aperture Studios</h1><p class="hero__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p><ul class="extra-list"><li class="extra-item extra-item-1">1/2000s</li><li class="extra-item extra-item-2">f/11</li><li class="extra-item extra-item-3">Iceland</li></ul></div></section></main><footer class="footer"><p class="footer__copyright">© Copyright&nbsp;<span>Mindblister </span>&nbsp;2019</p></footer><script src="js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="application-name" content=" ">
+    <meta name="author" content="">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <title>Aperture</title>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" as="style" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" /> -->
+    <!--link rel="stylesheet" href="./css/reset.css" /-->
+    <!-- <link rel="stylesheet" href="./css/style.css" as="style" /> -->
+    <link rel="stylesheet" href="./css/style.min.css" as="style">
+    <!--link rel="stylesheet" href="./css/flexboxgrid2.min.css" /-->
+    <!--link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /-->
+    <!-- <link rel="icon" type="image/png" href="./img/icons/64x64.png" /> -->
+    <!--link rel="manifest" href="./manifest.json" /-->
+  </head>
+
+  <body>
+    <!--HEADER START-->
+    <header class="header">
+  <div class="header__container container">
+    <div class="logo">
+      <a class="logo-link" href="#"><img src="img/svg/logo.svg" alt="logo"></a>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="#business" class="header__nav-link js-scroll">Business areas</a></li>
+        <li class="header__nav-item"><a href="#featured" class="header__nav-link js-scroll">Featured images</a></li>
+        <li class="header__nav-item"><a href="#gear-cage" class="header__nav-link js-scroll">Gear cage</a></li>
+        <li class="header__nav-item"><a href="#contact" class="header__nav-link js-scroll">Contact</a></li>
+        <li class="header__nav-item"><a href="#!" class="header__nav-link js-scroll">Get template</a></li>
+      </ul>
+    </nav>
+    <div class="header__burger burger">
+      <span class="burger__line burger__line-top"></span>
+      <span class="burger__line burger__line-middle"></span>
+      <span class="burger__line burger__line-bottom"></span>
+    </div>
+  </div>
+</header>
+
+    <!--HEADER END-->
+
+    <!--MAIN SECTION START-->
+    <main>
+      <section class="hero">
+        <div class="hero__container container">
+          <h3 class="hero__subtitle">Photographer & Filmmaker</h3>
+          <h1 class="hero__title">Aperture Studios</h1>
+          <p class="hero__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+            erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
+            posuere.
+          </p>
+        </div>
+        <ul class="extra-list">
+          <li class="extra-item extra-item-1">1/2000s</li>
+          <li class="extra-item extra-item-2">f/11</li>
+          <li class="extra-item extra-item-3">100</li>
+          <li class="extra-item extra-item-4">Iceland</li>
+        </ul>
+      </section>
+      <section class="what-we-do" id="business">
+        <div class="container">
+          <h2 class="what-we-do__title">What we do.</h2>
+          <h3 class="what-we-do__subtitle">The areas that we're specialized in.</h3>
+          <ul class="what-we-do__cards card__list">
+            <li class="card__item">
+              <figure class="card__item-pic">
+                <picture><source srcset="img/wwd-card-1.webp" type="image/webp"><img src="img/wwd-card-1.jpg" alt="Карточка 1" class="card__item-img"></picture>
+                <figcaption class="card__item-caption">
+                  <h4 class="card__item-title">PRODUCT PHOTOGRAPHy</h4>
+                  <p class="card__item-desc">
+                    Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam
+                    ut orci varius, faucibus libero ac, cursus quam.
+                  </p>
+                </figcaption>
+                <span class="card__item-readmo">
+                  <a href="#!" class="card__item-link">Read more</a>
+                </span>
+              </figure>
+            </li>
+            <li class="card__item">
+              <figure class="card__item-pic">
+                <picture><source srcset="img/wwd-card-2.webp" type="image/webp"><img src="img/wwd-card-2.jpg" alt="Карточка 2" class="card__item-img"></picture>
+                <figcaption class="card__item-caption">
+                  <h4 class="card__item-title">Architecture Photography</h4>
+                  <p class="card__item-desc">
+                    Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula
+                    est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus
+                    leo imperdiet nec.
+                  </p>
+                </figcaption>
+                <span class="card__item-readmo">
+                  <a href="#!" class="card__item-link">Read more</a>
+                </span>
+              </figure>
+            </li>
+            <li class="card__item">
+              <figure class="card__item-pic">
+                <picture><source srcset="img/wwd-card-3.webp" type="image/webp"><img src="img/wwd-card-3.jpg" alt="Карточка 3" class="card__item-img"></picture>
+                <figcaption class="card__item-caption">
+                  <h4 class="card__item-title">Drone Photography</h4>
+                  <p class="card__item-desc">
+                    Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a
+                    vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor
+                    hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.
+                  </p>
+                </figcaption>
+                <span class="card__item-readmo">
+                  <a href="#!" class="card__item-link">Read more</a>
+                </span>
+              </figure>
+            </li>
+            <li class="card__item">
+              <figure class="card__item-pic">
+                <picture><source srcset="img/wwd-card-4.webp" type="image/webp"><img src="img/wwd-card-4.jpg" alt="Карточка 4" class="card__item-img"></picture>
+                <figcaption class="card__item-caption">
+                  <h4 class="card__item-title">Wildlife Photography</h4>
+                  <p class="card__item-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et
+                    faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue
+                    et, vulputate ut ligula. Vestibulum sit amet urna turpis.
+                  </p>
+                </figcaption>
+                <span class="card__item-readmo">
+                  <a href="#!" class="card__item-link">Read more</a>
+                </span>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gear-cage" id="featured">
+        <div class="gear-cage__box">
+          <h4 class="gear-cage__subtitle">Sunset at Mount Fuji</h4>
+          <p class="gear-cage__desc">
+            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.
+          </p>
+          <ul class="extra-list">
+            <li class="extra-item extra-item-1">1''</li>
+            <li class="extra-item extra-item-2">f/16</li>
+            <li class="extra-item extra-item-3">400</li>
+            <li class="extra-item extra-item-4">Japan</li>
+          </ul>
+        </div>
+        <div class="gear-cage__box" id="gear-cage">
+          <h4 class="gear-cage__subtitle">The Gear cage</h4>
+          <h3 class="gear-cage__title">The tools that we use.</h3>
+          <p class="gear-cage__desc">
+            The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed
+            film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday
+            to capture the amazing things around us.
+          </p>
+          <span class="card__item-readmo">
+            <a href="#!" class="card__item-link">Check it out</a>
+          </span>
+        </div>
+        <div class="gear-cage__box">
+          <ul class="extra-list">
+            <li class="extra-item extra-item-1">0,8''</li>
+            <li class="extra-item extra-item-2">f/5,6</li>
+            <li class="extra-item extra-item-3">100</li>
+            <li class="extra-item extra-item-4">Sweden</li>
+          </ul>
+        </div>
+        <div class="gear-cage__box">
+          <h4 class="gear-cage__subtitle">Monstera Leafs</h4>
+          <p class="gear-cage__desc">
+            Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+          </p>
+          <ul class="extra-list">
+            <li class="extra-item extra-item-1">1/400s</li>
+            <li class="extra-item extra-item-2">f/3,5</li>
+            <li class="extra-item extra-item-3">100</li>
+            <li class="extra-item extra-item-4">Costa Rica</li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="container">
+          <h2 class="clients__title">Past clients</h2>
+          <h3 class="clients__subtitle">Trusted by your favourite companies</h3>
+          <div class="clients__logos">
+            <img src="img/svg/clients-logo-1.svg" alt="Logo-1" class="clients__logos-img">
+            <img src="img/svg/clients-logo-2.svg" alt="Logo-2" class="clients__logos-img">
+            <img src="img/svg/clients-logo-3.svg" alt="Logo-3" class="clients__logos-img">
+            <img src="img/svg/clients-logo-4.svg" alt="Logo-4" class="clients__logos-img">
+            <img src="img/svg/clients-logo-5.svg" alt="Logo-5" class="clients__logos-img">
+          </div>
+        </div>
+      </section>
+      <div class="himalayas__box gear-cage__box">
+        <h4 class="gear-cage__subtitle">Star fall in the Himalayas</h4>
+        <p class="gear-cage__desc">
+          Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut
+          ligula.
+        </p>
+        <ul class="extra-list">
+          <li class="extra-item extra-item-1">6''</li>
+          <li class="extra-item extra-item-2">f/11</li>
+          <li class="extra-item extra-item-3">800</li>
+          <li class="extra-item extra-item-4">Nepal</li>
+        </ul>
+      </div>
+      <div class="help">
+        <h2 class="help__title">Need help with photography or videography?</h2>
+        <h3 class="help__subtitle">We're here for you!</h3>
+        <span class="card__item-readmo">
+          <a href="#!" class="card__item-link">Get in touch</a>
+        </span>
+      </div>
+    </main>
+
+    <!--MAIN SECTION END-->
+
+    <!--FOOTER SECTION START-->
+    <footer class="contact" id="contact">
+  <div class="container">
+    <div class="contact__links-area">
+      <div class="contact__links-logobox">
+        <div class="logo">
+          <a class="logo-link" href="#"><img src="img/svg/logo.svg" alt="logo"></a>
+        </div>
+        <small class="contact__links-sublogo">Photographers & videographers capturing the world around us.</small>
+      </div>
+      <div class="contact__links-box">
+        <div class="contact__links-business">
+          <h4 class="contact__links-title">Business areas</h4>
+          <ul class="contact__links-list">
+            <li class="contact__links-links">Product Photography</li>
+            <li class="contact__links-links">Architecture Photography</li>
+            <li class="contact__links-links">Drone Photography</li>
+            <li class="contact__links-links">Wildlife Photography</li>
+          </ul>
+        </div>
+        <div class="contact__links-pages">
+          <h4 class="contact__links-title">Pages</h4>
+          <ul class="contact__links-list">
+            <li class="contact__links-links">Gear cage</li>
+            <li class="contact__links-links">Featured images</li>
+            <li class="contact__links-links">Contact</li>
+            <li class="contact__links-links">Style guide</li>
+            <li class="contact__links-links">Instructions</li>
+            <li class="contact__links-links">Changelog</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contact__subscribe-area">
+      <div class="contact__subscribe-text">
+        <h4 class="contact__subscribe-title">Subscribe to our newsletter</h4>
+        <small class="contact__subscribe-desc">Read about all the things we do.</small>
+      </div>
+      <span class="contact__subscribe-input-area">
+        <input type="text" class="contact__subscribe-input">
+      </span>
+    </div>
+    <div class="contact__social-aria">
+      <p class="contact__social-text">© Aperture Photography, Inc. All rights reserved.Licensing</p>
+      <div class="contact__social-links">
+        <!-- <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i> -->
+        <!--  -->
+        <!-- <img src="../img/svg/twitter-brands.svg" alt="twitter-logo" />
+        <img src="../img/svg/instagram-brands.svg" alt="instagram-logo" />
+        <img src="../img/svg/facebook-f-brands.svg" alt="facebook-logo" /> -->
+        <a class="contact__social-link" href="#!">
+          <svg xmlns="http://www.w3.org/2000/svg" class="contact__social-svg" viewBox="0 0 512 512">
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+          </svg>
+        </a>
+        <a class="contact__social-link" href="#!">
+          <svg xmlns="http://www.w3.org/2000/svg" class="contact__social-svg" viewBox="0 0 512 512">
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+          </svg>
+        </a>
+        <a class="contact__social-link" href="#!">
+          <svg xmlns="http://www.w3.org/2000/svg" class="contact__social-svg" viewBox="0 0 512 512">
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!--FOOTER SECTION END-->
+
+    <!--подключение скриптов-->
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <!-- <script src="../js/swiper-bundle.min.js"></script> -->
+    <!-- <script src="js/fullpage.min.js"></script> -->
+    <!-- <script src="js/onepagescroll.min.js"></script> -->
+    <!-- <script src="js/scroll.js"></script> -->
+    <!-- <script src="/js/t-scroll.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/brands.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script> -->
+    <!-- <script src="js/solid.min.js"></script> -->
+    <!-- <script src="./fonts/fontawesome/js/all.js"></script> -->
+    <script src="js/main.js"></script>
+    <!--script src="./js/main.min.js" type="module"></script-->
+  </body>
+</html>
