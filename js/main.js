@@ -35,3 +35,12 @@
   };
   scrollTo();
 })();
+//Burger
+(function () {
+  var burger = document.querySelector(".header__burger-container"),
+    nav = document.querySelector(".header__nav");
+
+  burger.onclick = function () {
+    nav.classList.toggle("menu-opened");
+  };
+})();

@@ -3,7 +3,7 @@
   background: url("../img/hero_img.jpg") center center / cover no-repeat fixed #000000;
   height: calc(100vh - 70px);
   padding-bottom: 80px;
-  margin-top: 70px;
+  // margin-top: 70px;
 }
 
 .hero__container {
@@ -26,6 +26,10 @@
   margin-bottom: 14px;
   max-width: 50%;
   text-align: center;
+  @include m800 {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
 }
 
 /* HERO END */
@@ -51,13 +55,18 @@
   justify-content: center;
   gap: 16px;
   margin-right: -16px;
+  @include m800 {
+    margin-right: 0;
+  }
 }
 .card__item {
-  width: 100%;
   height: 100%;
-  flex: 1 1 calc(50% - 8px);
+  flex: 1 1 calc(50% - $gap * 0.5);
   &:nth-child(2n) {
     margin-right: 0;
+  }
+  @include m800 {
+    flex: 1 1 calc(100% - $gap * 0.5);
   }
 }
 .card__item-pic {
@@ -147,6 +156,11 @@
     @include adaptiv-value("margin-left", 1050, 20, 0);
     margin-right: $gap;
     margin-bottom: 10px;
+    @include m800 {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 $gap * 0.5;
+    }
   }
 
   & > .card__item-readmo {
@@ -157,6 +171,10 @@
   & > .extra-list {
     margin-top: 200px;
     margin-bottom: 40px;
+    @include m800 {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &:first-child,
@@ -177,6 +195,7 @@
     & > .gear-cage__desc {
       margin-left: 0;
       margin-right: 0;
+      padding: 0;
     }
     & > .gear-cage__subtitle {
       color: $mygray;
@@ -192,11 +211,17 @@
       color: white;
       margin-bottom: 20px;
     }
+    @include m800 {
+      grid-column: 1 / span 2;
+    }
   }
   &:nth-child(3) {
     background: url("../img/gear-cage-3.jpg") center center / cover no-repeat scroll #000;
     & > .extra-list {
       @include adaptiv-value("margin-left", 400, 20, 0);
+    }
+    @include m800 {
+      grid-column: 1 / span 2;
     }
   }
   &:nth-child(4) {
@@ -208,12 +233,6 @@
   text-align: left;
 }
 
-.gear-cage__subtitle,
-.gear-cage__desc {
-  // width: 20%;
-  // @include adaptiv-value("width", 240, 290, 1);
-  // margin-right: 60px;
-}
 .gear-cage__desc {
   color: $mygray;
 }
@@ -255,6 +274,8 @@
 .help {
   background: #000;
   padding: 110px 0;
+  @include adaptiv-value("padding-top", 110, 100, 1);
+  @include adaptiv-value("padding-bottom", 110, 100, 1);
   display: flex;
   flex-direction: column;
   justify-content: center;
