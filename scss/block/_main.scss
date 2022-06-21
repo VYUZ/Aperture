@@ -261,6 +261,7 @@
   align-items: center;
   justify-content: center;
   gap: 109px;
+  @include adaptiv-value("gap", 109, 60, 1);
 }
 /* CLIENTS END */
 /* HIMALAYAS START */

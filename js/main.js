@@ -35,12 +35,20 @@
   };
   scrollTo();
 })();
+
 //Burger
 (function () {
   var burger = document.querySelector(".header__burger-container"),
+    navLink = document.querySelectorAll(".header__nav-link"),
     nav = document.querySelector(".header__nav");
 
   burger.onclick = function () {
     nav.classList.toggle("menu-opened");
   };
+
+  navLink.forEach((n) => n.addEventListener("click", closeMenu));
+  function closeMenu() {
+    // hamburger.classList.remove("active");
+    nav.classList.remove("menu-opened");
+  }
 })();
