@@ -13,6 +13,9 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -154,11 +157,19 @@ h3 {
 h1 {
   font-size: calc(40px + 14 * ((100vw - 320px) / 1120));
   line-height: 59px;
+  opacity: 0;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 h2 {
   font-size: 40px;
   line-height: 42px;
+  opacity: 0;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 h3 {
@@ -166,15 +177,27 @@ h3 {
   line-height: 30px;
   color: #c0c0c0;
   font-weight: normal;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 h4 {
   letter-spacing: 2px;
   text-transform: uppercase;
+  opacity: 0;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 p {
   font-size: 14px;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .extra-list {
@@ -206,25 +229,25 @@ p {
 }
 
 .extra-item-1::before {
-  background: url("/img/svg/extra-img-1.svg") center center/cover no-repeat;
+  background: url("../img/svg/extra-img-1.svg") center center/cover no-repeat;
   width: 16px;
   height: 16px;
 }
 
 .extra-item-2::before {
-  background: url("/img/svg/extra-img-2.svg") center center/cover no-repeat;
+  background: url("../img/svg/extra-img-2.svg") center center/cover no-repeat;
   width: 16px;
   height: 16px;
 }
 
 .extra-item-3::before {
-  background: url("/img/svg/extra-img-3.svg") center center/cover no-repeat;
+  background: url("../img/svg/extra-img-3.svg") center center/cover no-repeat;
   width: 32px;
   height: 16px;
 }
 
 .extra-item-4::before {
-  background: url("/img/svg/extra-img-4.svg") center center/cover no-repeat;
+  background: url("../img/svg/extra-img-4.svg") center center/cover no-repeat;
   width: 10px;
   height: 16px;
 }
@@ -233,6 +256,16 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+}
+
+.show {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 /* HEADER START */
@@ -714,6 +747,23 @@ select:focus {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 109px;
+}
+
+.clients__logos-img {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.clients__logos-img.show {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* CLIENTS END */
@@ -1210,10 +1260,10 @@ select:focus {
   }
 }
 @supports (-webkit-appearance:none){
-.extra-item-1::before{background:url("/img/svg/extra-img-1.svg") center center/cover no-repeat}
-.extra-item-2::before{background:url("/img/svg/extra-img-2.svg") center center/cover no-repeat}
-.extra-item-3::before{background:url("/img/svg/extra-img-3.svg") center center/cover no-repeat}
-.extra-item-4::before{background:url("/img/svg/extra-img-4.svg") center center/cover no-repeat}
+.extra-item-1::before{background:url("../img/svg/extra-img-1.svg") center center/cover no-repeat}
+.extra-item-2::before{background:url("../img/svg/extra-img-2.svg") center center/cover no-repeat}
+.extra-item-3::before{background:url("../img/svg/extra-img-3.svg") center center/cover no-repeat}
+.extra-item-4::before{background:url("../img/svg/extra-img-4.svg") center center/cover no-repeat}
 .hero{background:url("../img/hero_img.webp") center center/cover no-repeat fixed #000000}
 .gear-cage__box:first-child{background:url("../img/gear-cage-1.webp") center center/cover no-repeat fixed #000}
 .gear-cage__box:nth-child(3){background:url("../img/gear-cage-3.webp") center center/cover no-repeat scroll #000}
