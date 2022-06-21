@@ -263,6 +263,16 @@
   gap: 109px;
   @include adaptiv-value("gap", 109, 60, 1);
 }
+
+.clients__logos-img {
+  transform: translateY(100%);
+  opacity: 0;
+  transition-delay: 0.5s;
+  &.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* CLIENTS END */
 /* HIMALAYAS START */
 

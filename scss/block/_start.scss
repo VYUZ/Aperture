@@ -9,6 +9,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  transition: all 0.5s ease;
 }
 
 /* HTML5 display-role reset for older browsers */

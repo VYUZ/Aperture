@@ -44,6 +44,9 @@ h3 {
 h1 {
   @include adaptiv-value("font-size", 54, 40, 0);
   line-height: 59px;
+  opacity: 0;
+  transform: translateX(50%);
+  // transition-delay: 0.25s;
   // @include m1300 {
   //   font-size: 8vw;
   // }
@@ -56,6 +59,8 @@ h2 {
   font-size: 40px;
   @include adaptiv-value("font-size", 40, 30, 1);
   line-height: 42px;
+  opacity: 0;
+  transform: translateX(50%);
 }
 
 h3 {
@@ -63,16 +68,22 @@ h3 {
   line-height: 30px;
   color: $mygray;
   font-weight: normal;
+  opacity: 0;
+  transform: translateX(-50%);
 }
 
 h4 {
   letter-spacing: 2px;
   text-transform: uppercase;
+  opacity: 0;
+  transform: translateX(50%);
 }
 
 p {
   font-size: 14px;
   @include adaptiv-value("font-size", 14, 10, 1);
+  opacity: 0;
+  transform: translateX(-50%);
 }
 
 .extra-list {
@@ -101,28 +112,28 @@ p {
 
 .extra-item-1 {
   &::before {
-    background: url("/img/svg/extra-img-1.svg") center center / cover no-repeat;
+    background: url("../img/svg/extra-img-1.svg") center center / cover no-repeat;
     width: 16px;
     height: 16px;
   }
 }
 .extra-item-2 {
   &::before {
-    background: url("/img/svg/extra-img-2.svg") center center / cover no-repeat;
+    background: url("../img/svg/extra-img-2.svg") center center / cover no-repeat;
     width: 16px;
     height: 16px;
   }
 }
 .extra-item-3 {
   &::before {
-    background: url("/img/svg/extra-img-3.svg") center center / cover no-repeat;
+    background: url("../img/svg/extra-img-3.svg") center center / cover no-repeat;
     width: 32px;
     height: 16px;
   }
 }
 .extra-item-4 {
   &::before {
-    background: url("/img/svg/extra-img-4.svg") center center / cover no-repeat;
+    background: url("../img/svg/extra-img-4.svg") center center / cover no-repeat;
     width: 10px;
     height: 16px;
   }
@@ -132,6 +143,13 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+}
+
+//css animation
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
 }
 
 // @import "../node_modules/t-scroll/sass/t-scroll.min.scss";
