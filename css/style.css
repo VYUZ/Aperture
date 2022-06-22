@@ -130,7 +130,7 @@ table {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("/font/poppins-v20-latin-regular.woff2") format("woff2"), url("/font/poppins-v20-latin-regular.woff") format("woff");
+  src: local(""), url("../font/poppins-v20-latin-regular.woff2") format("woff2"), url("../font/poppins-v20-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -460,6 +460,7 @@ select:focus {
 
 .hero__subtitle {
   margin-bottom: 1px;
+  text-transform: uppercase;
 }
 
 .hero__title {
