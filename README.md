@@ -12,4 +12,3 @@ tpl - https://www.figma.com/file/eptlnkHwRzxlv7K3pKmpj6/Aperture-(Copy)?node-id=
 
 testing - https://aperturree.netlify.app/#business
 
-Do not forget: favicon, show animation, testing
